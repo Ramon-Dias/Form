@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import 'variables.scss';
+
+footer {
+	width: 100%;
+	position: relative;
+
+	.footer__newsletter{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 1px 0px;
+		border-style: solid;
+		border-color: $black;
+
+		.footer__newsletter-form{
+			display: flex;
+			flex-direction: column;
+			width: 37.03%;
+			padding: 16px 0px;
+
+
+
+			label{
+				font-family: 'Roboto', sans-serif;
+				font-size: 18px;
+				text-transform: uppercase;
+				line-height: 21px;
+				letter-spacing: 0.05em;
+				font-variant: small-caps;
+				color: #303030;
+			}
+
+			.footer__newsletter-input{
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+
+
+				input{
+					width: 71.73%;
+					background: #FFFFFF;
+					border: 1px solid #E5E5E5;
+					border-radius: 4px;
+					padding: 13px 16px;
+				}
+
+				button{
+					color: #FFFFFF;
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 12px;
+					line-height: 14px;
+					text-align: center;
+					letter-spacing: 0.05em;
+
+					background: #000000;
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 4px;
+					padding: 14px 20px;
+				}
+			}
+
+
+
+		}
+	}
+
+	.footer__top{
+		display: flex;
+		justify-content: space-between;
+		padding: 50px 100px;
+
+		.footer__infos{
+			display: flex;
+			justify-content: space-between;
+			width: 55.23%;
+
+			.footer__info-title{
+				text-align: start;
+				margin-top: 0px;
+			}
+
+		}
+
+		.footer__info {
+			color: $black;
+		}
+
+		.footer__redes{
+			width: 16.80%;
+			.footer__container-rede{
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				img {
+					width: 16.28%;
+				}
+
+				p {
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+
+	.footer__bottom{
+		display: flex;
+		align-items: center;
+		background-color: $black;
+		color: $white;
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
+		font-size: 20px;
+		line-height: 23px;
+		justify-content: space-between;
+		padding: 0px 100px;
+
+		.footer__text-bottom{
+			width: 20%;
+			font-style: normal;
+			font-size: 10px;
+			line-height: 12px;
+			text-transform: capitalize;
+		}
+
+		.footer__container-bandeiras{
+			display: flex;
+			padding: 15px 0px;
+			width: 40%;
+			justify-content: space-between;
+
+			.footer__line{
+				border-left: 1px solid $white;
+			}
+
+			img {
+				width: 10.12%;
+			}
+		}
+
+		.footer__certificate{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 17.70%;
+			p {
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 12px;
+				text-transform: capitalize;
+			}
+
+			img {
+				width: 15%;
+			}
+		}
+
+	}
+
+}
+
+
+@media (max-width: 1024px) {
+	footer {
+		.footer__newsletter{
+			.footer__newsletter-form{
+				width: 100%;
+				padding: 16px 16px;
+
+				.footer__newsletter-input{
+					flex-direction: column;
+					input{
+						width: 96.5%;
+					}
+				}
+			}
+		}
+
+		.footer__top{
+			flex-direction: column;
+			padding: 24px 16px;
+			.footer__infos{
+				flex-direction: column;
+			}
+
+			.footer__info{
+				display: none;
+			}
+		}
+
+		.footer__bottom{
+			padding: 0px 16px;
+			align-items: flex-start;
+			flex-direction: column;
+
+			.footer__text-bottom{
+				width: 30%;
+			}
+
+			.footer__certificate {
+				width: 30%;
+			}
+		}
+	}
+}
+
+@media (min-width: 2500px) {
+	footer {
+		.footer__newsletter{
+			.footer__newsletter-form{
+				label {
+					font-size: 36px;
+					line-height: 42px;
+
+				}
+				.footer__newsletter-input{
+					button{
+						font-size: 24px;
+						line-height: 28px;
+					}
+
+				}
+			}
+		}
+
+		.footer__top {
+			.footer__infos{
+				.footer__info-title{
+					font-size: 28px;
+					line-height: 33px;
+				}
+				.footer__info{
+					font-size: 24px;
+					line-height: 28px;
+				}
+			}
+			.footer__redes p{
+				font-size: 28px;
+				line-height: 33px;
+			}
+		}
+
+		.footer__bottom {
+			.footer__text-bottom {
+				font-size: 20px;
+				line-height: 23px;
+			}
+			.footer__certificate p{
+				font-size: 20px;
+				line-height: 23px;
+			}
+		}
+
+	}
+}

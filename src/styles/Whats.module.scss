@@ -1,0 +1,17 @@
+.container__icon {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+	right: 0;
+	bottom:0;
+	padding: 16px;
+	z-index: 1;
+}
+
+
+
+.icon__whats img {
+    width: 34px;
+}
+

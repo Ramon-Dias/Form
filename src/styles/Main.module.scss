@@ -1,0 +1,43 @@
+.main__route {
+	display: flex;
+	padding: 29px 100px;
+	width: 10%;
+	justify-content: space-around;
+	align-items: center;
+
+	.main__home {
+		width: 15.69%;
+
+	}
+
+	.main__arrow{
+		width: 7%;
+	}
+
+
+	p {
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		color: #C4C4C4;
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.main__route{
+		padding: 29px 16px;
+	}
+}
+
+@media (min-width: 2500px) {
+	.main__route{
+		.container__main-title {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+	}
+}

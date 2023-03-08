@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import 'variables.scss';
+
+header {
+	width: 100%;
+	color: $white;
+	padding: 0;
+	background-color: $black;
+
+	.header__menu{
+		display: none;
+	}
+
+	.header__top{
+		padding: 25.07px 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.header__logo{
+			width: 10.63%;
+		}
+
+		.header__container-input{
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			position: relative;
+			width: 20.63%;
+
+
+			.header__search{
+				display: flex;
+				width: 100%;
+				border: 2px solid #F2F2F2;
+				border-radius: 5px;
+				height: 32px;
+				padding-left: 16px;
+			}
+			.header__search-icon{
+
+				position: absolute;
+				color: #303030;
+				margin-right: 7px;
+			}
+		}
+
+		.header__my-account-cart{
+			display: flex;
+
+			justify-content: space-between;
+			align-items: center;
+
+			.header__account {
+				font-style: normal;
+				font-size: 14px;
+				line-height: 16px;
+				text-transform: uppercase;
+				font-family: 'Roboto', sans-serif;
+			}
+
+
+		}
+	}
+
+	.header__line{
+		border-bottom: 1px solid $white;
+	}
+
+	.header__botton{
+		display: flex;
+		width: 27.58%;
+		justify-content: space-between;
+		margin: 0px 100px;
+
+		.header__botton-nav-text {
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-size: 14px;
+			line-height: 16px;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+@media (max-width: 1024px) {
+	header{
+		.header__top{
+			padding: 25.07px 16px;
+		}
+
+
+
+		.header__menu{
+			display: block;
+
+		}
+
+		.header__menu button {
+			background-color: #000000;
+			border: #000000;
+		}
+
+		.header__account{
+			display: none;
+		}
+		.header__botton{
+			display: none;
+		}
+	}
+
+}
+
+@media (max-width: 375px) {
+	header{
+		.header__top{
+			.header__container-input{
+
+				display: none;
+			}
+		}
+
+	}
+}
+
+@media (min-width: 2500px) {
+	header {
+		.header__top{
+			.header__my-account-cart{
+				.header__account{
+					font-size: 28px;
+					line-height: 33px;
+				}
+			}
+		}
+.header__botton {
+	.header__botton-nav-text{
+		font-size: 28px;
+		line-height: 33px;
+	}
+}
+
+	}
+}

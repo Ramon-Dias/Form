@@ -1,0 +1,53 @@
+.sobre__container {
+
+	padding: 0px 30px;
+}
+
+.sobre__title {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #292929;
+	text-align: left;
+	padding-bottom: 12px;
+}
+.sobre__description {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #7D7D7D;
+    text-align: left;
+    padding-bottom: 94px;
+}
+
+@media (max-width: 1024px) {
+    .sobre__title {
+		text-align: center;
+    }
+
+	.sobre__container{
+		padding: 0;
+	}
+
+	.sobre__description{
+		padding-bottom: 81px;
+		text-align: justify
+	}
+}
+
+@media (min-width: 2500px) {
+	.sobre__title{
+		font-size: 48px;
+		line-height: 56px;
+	}
+
+	.sobre__description{
+		font-size: 26px;
+		line-height: 30px
+	}
+}
+
